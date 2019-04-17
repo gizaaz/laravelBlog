@@ -14,7 +14,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('about');
@@ -22,14 +22,14 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 Route::get('/blog', function () {
     return view('blog');
-});
+})->name('blog');
 
 Route::get('/post', function () {
     return view('post');
-});
+})->name('post');
 
 
