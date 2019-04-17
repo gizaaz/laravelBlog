@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <!-- s-content
 ================================================== -->
 <section class="s-content s-content--narrow">
