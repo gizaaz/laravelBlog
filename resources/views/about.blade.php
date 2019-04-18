@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('otherLayout')
 
 @section('content')
     <!-- s-content
