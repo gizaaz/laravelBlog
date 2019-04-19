@@ -88,13 +88,14 @@
                     <li class="current"><a href="{{route('home')}}" title="">Home</a></li>
                     <li class="has-childrens">
                         <a href="{{route('blog')}}" title="">Blog</a>
+                        @php
+                        use App\Category;
+                        $categories = Category::get();
+                        @endphp
                         <ul class="sub-menu">
-                            <li><a href="blog.html">Lifestyle</a></li>
-                            <li><a href="blog.html">Health</a></li>
-                            <li><a href="blog.html">Family</a></li>
-                            <li><a href="blog.html">Management</a></li>
-                            <li><a href="blog.html">Travel</a></li>
-                            <li><a href="blog.html">Work</a></li>
+                            @foreach ($categories as $category)
+                                <li><a href="blog.html">{{$category->title}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li><a href="{{route('about')}}" title="">About</a></li>
