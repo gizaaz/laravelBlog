@@ -15,8 +15,7 @@
 
                 <div class="entry__thumb">
                     <a href="single-standard.html" class="entry__thumb-link">
-                        <img src="{{asset('images/thumbs/masonry/lamp-400.jpg')}}"
-                             srcset="{{asset('images/thumbs/masonry/lamp-400.jpg 1x, images/thumbs/masonry/lamp-800.jpg 2x')}}" alt="">
+                        <img src="{{asset('images/thumbs/masonry/lamp-400.jpg')}}" alt="">
                     </a>
                 </div>
 
