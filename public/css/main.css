@@ -2164,7 +2164,7 @@ body.search-is-visible {
    padding: 0 2rem;
 }
 
-.header__nav li.has-childrens {
+.header__nav li.has-children {
    padding-right: 3.3rem;
 }
 
@@ -2174,7 +2174,7 @@ body.search-is-visible {
    line-height: 39px;
 }
 
-.header__nav li.has-childrens > a::after {
+.header__nav li.has-children > a::after {
    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
    border-right: 1px solid rgba(255, 255, 255, 0.3);
    content: '';
@@ -2271,8 +2271,8 @@ body.search-is-visible {
  * main navigation
  * ------------------------------------------------------------------- */
 @media only screen and (min-width:801px) {
-   .header__nav li.has-childrens:hover > a::after, 
-   .header__nav li.has-childrens:focus > a::after {
+   .header__nav li.has-children:hover > a::after,
+   .header__nav li.has-children:focus > a::after {
       -webkit-transform: rotate(225deg);
       -ms-transform: rotate(225deg);
       transform: rotate(225deg);
@@ -2334,11 +2334,11 @@ body.search-is-visible {
       transition: none !important;
    }
 
-   .header__nav li.has-childrens > a::after {
+   .header__nav li.has-children > a::after {
       top: 27px;
    }
 
-   .header__nav li.has-childrens > a.sub-menu-is-open::after {
+   .header__nav li.has-children > a.sub-menu-is-open::after {
       -webkit-transform: rotate(225deg);
       -ms-transform: rotate(225deg);
       transform: rotate(225deg);

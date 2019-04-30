@@ -22,9 +22,7 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
 
-Route::get('/post', function () {
-    return view('post');
-})->name('post');
+Route::get('/post', function () {return view('post');})->name('post');
 
 
 
