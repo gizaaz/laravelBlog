@@ -14,4 +14,13 @@ class BlogController extends Controller
 
         return view('blog', compact('posts', $posts));
     }
+
+    public function getCategoryPosts(Request $request)
+    {
+        $posts = DB::table('posts')
+            ->where('category_id',$request->id)
+            ->paginate(5);
+
+        return view('blog', compact('posts', $posts));
+    }
 }

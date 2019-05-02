@@ -42,7 +42,7 @@
 
             <div class="header__logo">
                 <a class="logo" href="index.html">
-                    <img src="images/logo.svg" alt="Homepage">
+                    <img src="{{asset('images/logo.svg')}}" alt="Homepage">
                 </a>
             </div> <!-- end header__logo -->
 
@@ -71,13 +71,14 @@
                     <li><a href="{{route('home')}}" title="">Home</a></li>
                     <li class="has-childrens">
                         <a href="{{route('blog')}}" title="">Blog</a>
+                        @php
+                            use App\Category;
+                            $categories = Category::get();
+                        @endphp
                         <ul class="sub-menu">
-                            <li><a href="category.html">Lifestyle</a></li>
-                            <li><a href="category.html">Health</a></li>
-                            <li><a href="category.html">Family</a></li>
-                            <li><a href="category.html">Management</a></li>
-                            <li><a href="category.html">Travel</a></li>
-                            <li><a href="category.html">Work</a></li>
+                            @foreach ($categories as $category)
+                                <li><a href="{{route('getCategoryPosts',['id'=> $category->id ])}}">{{$category->title}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li><a href="{{route('about')}}" title="">About</a></li>

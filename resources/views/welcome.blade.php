@@ -37,7 +37,7 @@
                     </div>
                     <div class="entry__meta">
                             <span class="entry__meta-links">
-                                <a href="blog.html">{{$category}}</a>
+                                <a href="blog.html">{{$post->category->title}}</a>
                             </span>
                     </div>
                 </div>

@@ -11,9 +11,10 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $posts = Post::inRandomOrder()->limit(20)->get();
-        $category = DB::table('categories');
+        $posts = Post::with('category')
+            ->inRandomOrder()->limit(20)
+            ->get();
 
-        return view('welcome', compact( 'posts', 'category'));
+        return view('welcome', compact( 'posts'));
     }
 }

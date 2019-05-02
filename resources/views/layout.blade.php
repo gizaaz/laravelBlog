@@ -77,7 +77,7 @@
                         @endphp
                         <ul class="sub-menu">
                             @foreach ($categories as $category)
-                                <li><a href="blog.html">{{$category->title}}</a></li>
+                                <li><a href="{{route('getCategoryPosts',['id'=> $category->id ])}}">{{$category->title}}</a></li>
                             @endforeach
                         </ul>
                     </li>

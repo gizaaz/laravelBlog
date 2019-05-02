@@ -24,7 +24,7 @@ Route::get('/blog', 'BlogController@index')->name('blog');
 
 Route::get('/post', function () {return view('post');})->name('post');
 
-
+Route::get('/blog/category/{id}', 'BlogController@getCategoryPosts')->name('getCategoryPosts');
 
 Auth::routes();
 
