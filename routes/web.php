@@ -14,16 +14,14 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'WelcomeController@index')->name('home');
+Route::get('/', 'WelcomeController@index')->name('welcome');
 
 Route::get('/about', 'AboutController@index')->name('about');
 
 Route::get('/contact', 'ContactController@index')->name('contact');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
-
-Route::get('/post', function () {return view('post');})->name('post');
-
+Route::get('/post/id={id}', 'BlogController@post')->name('post');
 Route::get('/blog/category/{id}', 'BlogController@getCategoryPosts')->name('getCategoryPosts');
 
 Auth::routes();

@@ -9,24 +9,21 @@
 
         <div class="s-content__header col-full">
             <h1 class="s-content__header-title">
-                This Is A Standard Format Post.
+                {{$post->title}}
             </h1>
             <ul class="s-content__header-meta">
-                <li class="date">December 16, 2017</li>
+                <li class="date">{{date_format($post->created_at, 'F d, Y')}}</li>
                 <li class="cat">
                     In
-                    <a href="#0">Lifestyle</a>
-                    <a href="#0">Travel</a>
+                    <a href="{{route('getCategoryPosts',['id'=> $post->category->id ])}}">{{$post->category->title}}</a>
                 </li>
             </ul>
         </div> <!-- end s-content__header -->
 
         <div class="s-content__media col-full">
             <div class="s-content__post-thumb">
-                <img src="images/thumbs/single/standard/standard-1000.jpg"
-                     srcset="images/thumbs/single/standard/standard-2000.jpg 2000w,
-                                 images/thumbs/single/standard/standard-1000.jpg 1000w,
-                                 images/thumbs/single/standard/standard-500.jpg 500w"
+                <img src="{{asset('images/' . $post->image_url)}}"
+
                      sizes="(max-width: 2000px) 100vw, 2000px" alt="" >
             </div>
         </div> <!-- end s-content__media -->
@@ -252,7 +249,7 @@
             <div class="block-1-2 block-m-full popular__posts">
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/wheel-150.jpg" alt="">
+                        <img src="{{asset('images/wheel-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">Visiting Theme Parks Improves Your Health.</a></h5>
                     <section class="popular__meta">
@@ -262,7 +259,7 @@
                 </article>
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/shutterbug-150.jpg" alt="">
+                        <img src="{{asset('images/shutterbug-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">Key Benefits Of Family Photography.</a></h5>
                     <section class="popular__meta">
@@ -272,7 +269,7 @@
                 </article>
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/cookies-150.jpg" alt="">
+                        <img src="{{asset('images/cookies-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">Absolutely No Sugar Oatmeal Cookies.</a></h5>
                     <section class="popular__meta">
@@ -282,7 +279,7 @@
                 </article>
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/beetle-150.jpg" alt="">
+                        <img src="{{asset('images/beetle-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">Throwback To The Good Old Days.</a></h5>
                     <section class="popular__meta">
@@ -292,7 +289,7 @@
                 </article>
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/tulips-150.jpg" alt="">
+                        <img src="{{asset('images/tulips-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">10 Interesting Facts About Caffeine.</a></h5>
                     <section class="popular__meta">
@@ -302,7 +299,7 @@
                 </article>
                 <article class="col-block popular__post">
                     <a href="#0" class="popular__thumb">
-                        <img src="images/thumbs/small/salad-150.jpg" alt="">
+                        <img src="{{asset('images/salad-150.jpg')}}" alt="">
                     </a>
                     <h5><a href="#0">Healthy Mediterranean Salad Recipes</a></h5>
                     <section class="popular__meta">

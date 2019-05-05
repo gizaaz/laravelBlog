@@ -15,72 +15,72 @@ class PostTableSeeder extends Seeder
     {
         DB::table('posts')->insert([
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/lamp-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'lamp-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/tulips-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'tulips-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/cookies-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'cookies-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/wheel-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'wheel-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/shutterbug-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'shutterbug-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'title' => 'Lifestyle',
-                    'image_url' => 'images/thumbs/masonry/gallery/gallery-1-400.jpg',
+                    'title' => 'Test',
+                    'image_url' => 'gallery-1-400.jpg',
                     'content' => 'Text gsdklgnlng gnmdfsng;l mn
                     gfdsgfds
                     fhdfhdsfhhhdf',
-                    'category_id' => '1',
+                    'category_id' => '6',
                     'user_id' => '1',
                     'views' => '0',
                     'created_at' => Carbon::now(),

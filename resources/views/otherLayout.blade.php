@@ -41,7 +41,7 @@
         <div class="header__content row">
 
             <div class="header__logo">
-                <a class="logo" href="index.html">
+                <a class="logo" href="http://blog/">
                     <img src="{{asset('images/logo.svg')}}" alt="Homepage">
                 </a>
             </div> <!-- end header__logo -->
@@ -68,7 +68,7 @@
                 <h2 class="header__nav-heading h6">Site Navigation</h2>
 
                 <ul class="header__nav">
-                    <li><a href="{{route('home')}}" title="">Home</a></li>
+                    <li><a href="{{route('welcome')}}" title="">Home</a></li>
                     <li class="has-childrens">
                         <a href="{{route('blog')}}" title="">Blog</a>
                         @php
@@ -109,7 +109,7 @@
                 <h4>Quick Links</h4>
 
                 <ul class="s-footer__linklist">
-                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('welcome')}}">Home</a></li>
                     <li><a href="{{route('blog')}}">Blog</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
                     <li><a href="{{route('contact')}}">Contact</a></li>
@@ -193,6 +193,7 @@
 ================================================== -->
 <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
 <script src="{{asset('js/plugins.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="{{asset('js/main.js')}}"></script>
 
 </body>

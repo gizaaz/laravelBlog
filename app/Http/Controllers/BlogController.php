@@ -10,17 +10,25 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $posts = DB::table('posts')->paginate(5);
+        $posts = Post::with('category')->paginate(20);
 
         return view('blog', compact('posts', $posts));
     }
 
     public function getCategoryPosts(Request $request)
     {
-        $posts = DB::table('posts')
+        $posts = Post::with('category')
             ->where('category_id',$request->id)
-            ->paginate(5);
+            ->paginate(20);
 
         return view('blog', compact('posts', $posts));
+    }
+
+    public function post($id)
+    {
+        $post = Post::with('category', 'author')
+            ->where('id', $id)->first();
+
+        return view('post', compact( 'post', $post));
     }
 }

@@ -68,7 +68,7 @@
                 <h2 class="header__nav-heading h6">Site Navigation</h2>
 
                 <ul class="header__nav">
-                    <li class="current"><a href="{{route('home')}}" title="">Home</a></li>
+                    <li class="current"><a href="{{route('welcome')}}" title="">Home</a></li>
                     <li class="has-childrens">
                         <a href="{{route('blog')}}" title="">Blog</a>
                         @php
@@ -99,15 +99,15 @@
             <div class="featured">
 
                 <div class="featured__column featured__column--big">
-                    <div class="entry" style="background-image:url('images/thumbs/featured/featured-guitarman.jpg');">
+                    <div class="entry" style="background-image:url('images/featured-guitarman.jpg');">
 
                         <div class="entry__content">
-                            <span class="entry__category"><a href="#0">Music</a></span>
+                            <span class="entry__category"><a href="http://blog/blog/category/1">Lifestyle</a></span>
 
-                            <h1><a href="#0" title="">What Your Music Preference Says About You and Your Personality.</a></h1>
+                            <h1><a href="{{route('post', ['id'=> 1])}}" title="">What Your Music Preference Says About You and Your Personality.</a></h1>
 
                             <div class="entry__info">
-                                <a href="#0" class="entry__profile-pic">
+                                <a href="{{route('post', ['id'=> 1])}}" class="entry__profile-pic">
                                     <img class="avatar" src="{{asset('images/avatars/user-03.jpg')}}" alt="">
                                 </a>
 
@@ -123,15 +123,15 @@
 
                 <div class="featured__column featured__column--small">
 
-                    <div class="entry" style="background-image:url('images/thumbs/featured/featured-watch.jpg');">
+                    <div class="entry" style="background-image:url('images/featured-watch.jpg');">
 
                         <div class="entry__content">
-                            <span class="entry__category"><a href="#0">Management</a></span>
+                            <span class="entry__category"><a href="http://blog/blog/category/4">Management</a></span>
 
-                            <h1><a href="#0" title="">The Pomodoro Technique Really Works.</a></h1>
+                            <h1><a href="{{route('post', ['id'=> 2])}}" title="">The Pomodoro Technique Really Works.</a></h1>
 
                             <div class="entry__info">
-                                <a href="#0" class="entry__profile-pic">
+                                <a href="{{route('post', ['id'=> 2])}}" class="entry__profile-pic">
                                     <img class="avatar" src="{{asset('images/avatars/user-03.jpg')}}" alt="">
                                 </a>
 
@@ -144,15 +144,15 @@
 
                     </div> <!-- end entry -->
 
-                    <div class="entry" style="background-image:url('images/thumbs/featured/featured-beetle.jpg');">
+                    <div class="entry" style="background-image:url('images/featured-beetle.jpg');">
 
                         <div class="entry__content">
-                            <span class="entry__category"><a href="#0">LifeStyle</a></span>
+                            <span class="entry__category"><a href="http://blog/blog/category/1">LifeStyle</a></span>
 
-                            <h1><a href="#0" title="">Throwback To The Good Old Days.</a></h1>
+                            <h1><a href="{{route('post', ['id'=> 3])}}" title="">Throwback To The Good Old Days.</a></h1>
 
                             <div class="entry__info">
-                                <a href="#0" class="entry__profile-pic">
+                                <a href="{{route('post', ['id'=> 3])}}" class="entry__profile-pic">
                                     <img class="avatar" src="{{asset('images/avatars/user-03.jpg')}}" alt="">
                                 </a>
 
@@ -187,7 +187,7 @@
                 <h4>Quick Links</h4>
 
                 <ul class="s-footer__linklist">
-                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('welcome')}}">Home</a></li>
                     <li><a href="{{route('blog')}}">Blog</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
                     <li><a href="{{route('contact')}}">Contact</a></li>
@@ -271,6 +271,7 @@
 ================================================== -->
 <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
 <script src="{{asset('js/plugins.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="{{asset('js/main.js')}}"></script>
 
 </body>
