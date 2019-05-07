@@ -10,7 +10,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $posts = Post::with('category')->paginate(20);
+        $posts = Post::with('category')->simplePaginate(20);
 
         return view('blog', compact('posts', $posts));
     }

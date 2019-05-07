@@ -63,60 +63,60 @@
 
             <div class="block-1-2 block-m-full popular__posts">
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/wheel-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 4])}}" class="popular__thumb">
+                        <img src="{{asset('images/wheel-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">Visiting Theme Parks Improves Your Health.</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 4])}}">Visiting Theme Parks Improves Your Health.</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-19">Dec 19, 2017</time></span>
                     </section>
                 </article>
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/shutterbug-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 5])}}" class="popular__thumb">
+                        <img src="{{asset('images/shutterbug-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">Key Benefits Of Family Photography.</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 5])}}">Key Benefits Of Family Photography.</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-18">Dec 18, 2017</time></span>
                     </section>
                 </article>
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/cookies-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 6])}}" class="popular__thumb">
+                        <img src="{{asset('images/cookies-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">Absolutely No Sugar Oatmeal Cookies.</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 6])}}">Absolutely No Sugar Oatmeal Cookies.</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-16">Dec 16, 2017</time></span>
                     </section>
                 </article>
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/beetle-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 7])}}" class="popular__thumb">
+                        <img src="{{asset('images/beetle-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">Throwback To The Good Old Days.</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 7])}}">Throwback To The Good Old Days.</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-16">Dec 16, 2017</time></span>
                     </section>
                 </article>
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/tulips-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 8])}}" class="popular__thumb">
+                        <img src="{{asset('images/tulips-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">10 Interesting Facts About Caffeine.</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 8])}}">10 Interesting Facts About Caffeine.</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-14">Dec 14, 2017</time></span>
                     </section>
                 </article>
                 <article class="col-block popular__post">
-                    <a href="#0" class="popular__thumb">
-                        <img src="{{asset('images/thumbs/small/salad-150.jpg')}}" alt="">
+                    <a href="{{route('post', ['id'=> 9])}}" class="popular__thumb">
+                        <img src="{{asset('images/salad-150.jpg')}}" alt="">
                     </a>
-                    <h5><a href="#0">Healthy Mediterranean Salad Recipes</a></h5>
+                    <h5><a href="{{route('post', ['id'=> 9])}}">Healthy Mediterranean Salad Recipes</a></h5>
                     <section class="popular__meta">
                         <span class="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
                         <span class="popular__date"><span>on</span> <time datetime="2017-12-12">Dec 12, 2017</time></span>
